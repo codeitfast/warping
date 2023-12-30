@@ -8,7 +8,7 @@ import { BiSolidPlanet } from "react-icons/bi";
 import { LuAxis3D, LuGrid } from "react-icons/lu";
 
 import { EffectComposer, UnrealBloomPass, Bloom, GodRays } from "@react-three/postprocessing";
-import { GodraysPass } from 'three-good-godrays';
+import { BlendFunction, Resizer, KernelSize } from "postprocessing";
 
 import { FaSun } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
@@ -262,7 +262,13 @@ export default function Home() {
                 {godrays && 
                 <EffectComposer fallback={null}>
               {sunRef.current && 
-            <GodRays sun={sunRef}/>
+            <GodRays sun={sunRef}
+            blendFunction={BlendFunction.Screen}
+            width={Resizer.AUTO_SIZE}
+            height={Resizer.AUTO_SIZE}
+            kernelSize={KernelSize.SMALL}
+
+            />
               }
           </EffectComposer>
                 }
