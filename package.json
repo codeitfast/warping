@@ -1,0 +1,26 @@
+{
+  "name": "warping",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.90.0",
+    "@react-three/postprocessing": "^2.15.11",
+    "autoprefixer": "10.4.16",
+    "mathjs": "^12.1.0",
+    "next": "14.0.3",
+    "postcss": "8.4.32",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.12.0",
+    "react-three-fiber": "^6.0.13",
+    "tailwindcss": "3.3.6",
+    "three": "^0.159.0",
+    "three-good-godrays": "^0.5.0"
+  }
+}
